@@ -1,4 +1,3 @@
-
 package ma.emsi.laaziz.resource;
 
 import jakarta.inject.Inject;
