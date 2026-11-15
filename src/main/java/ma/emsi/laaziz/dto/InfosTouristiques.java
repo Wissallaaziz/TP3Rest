@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package ma.emsi.laaziz.resource;
 
 import jakarta.inject.Inject;
@@ -59,3 +60,5 @@ public class InfosTouristiques {
         }
     }
 }
+=======
+>>>>>>> 56cc7ef (modification du pom.xml)

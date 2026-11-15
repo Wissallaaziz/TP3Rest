@@ -7,5 +7,5 @@ import jakarta.ws.rs.core.Application;
  * Configuration de l'application REST.
  */
 @ApplicationPath("api")
-public class HelloApplication extends Application {
+public class GuideTouristiqueApplication extends Application {
 }
