@@ -1,0 +1,5 @@
+ma\emsi\laaziz\resource\InfosTouristiques.class
+ma\emsi\laaziz\config\HelloApplication.class
+ma\emsi\laaziz\llm\GuideTouristique.class
+ma\emsi\laaziz\llm\LlmClient.class
+ma\emsi\laaziz\resource\HelloResource.class

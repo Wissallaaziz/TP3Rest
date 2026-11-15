@@ -6,24 +6,21 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-/**
- * Ressource REST pour obtenir des informations touristiques.
- */
 @Path("/guide")
-public class GuideTouristiqueResource {
+public class HelloResource {
 
     /**
-     * Retourne le nom de la ville ou du pays demandé.
+     * Retourne un tableau JSON contenant le nom de la ville ou du pays.
      *
      * @param villeOuPays nom de la ville ou du pays
-     * @return nom du lieu demandé
+     * @return tableau contenant le nom du lieu demandé
      */
     @GET
     @Path("lieu/{ville_ou_pays}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String endroitsDeVisite(
+    @Produces(MediaType.APPLICATION_JSON)
+    public String[] endroitsDeVisite(
             @PathParam("ville_ou_pays") String villeOuPays) {
 
-        return villeOuPays;
+        return new String[]{villeOuPays};
     }
 }
