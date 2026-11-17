@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-package ma.emsi.laaziz.resource;
+package ma.emsi.laaziz.dto;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.DefaultValue;
@@ -11,13 +10,13 @@ import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import ma.emsi.laaziz.llm.LlmClient;
+import ma.emsi.laaziz.llm.LlmClientForGuideTouristique;
 
 @Path("/guide")
 public class InfosTouristiques {
 
     @Inject
-    private LlmClient llmClient;
+    private LlmClientForGuideTouristique llmClient;
 
     /**
      * Génère un guide touristique JSON pour une ville ou un pays.
@@ -60,5 +59,3 @@ public class InfosTouristiques {
         }
     }
 }
-=======
->>>>>>> 56cc7ef (modification du pom.xml)
